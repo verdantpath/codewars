@@ -8,6 +8,8 @@ function toCamelCase(str){
   return result;
 }
 
+// console.log(toCamelCase('the-stealth-warrior'));
+
 String.prototype.camelCase = function() {
   let arr = this.split(' ');
   let camel = [];
@@ -16,6 +18,12 @@ String.prototype.camelCase = function() {
   return result;
 }
 
-// console.log(toCamelCase('the-stealth-warrior'));
+console.log("lorem ipsum dolor sit amet".camelCase())
 
-console.log("shitty fart pants".camelCase())
+// top solution from other submitter
+
+String.prototype.camelCase=function(){
+  return this.split(' ').map(function(word){
+   return word.charAt(0).toUpperCase() + word.slice(1);
+ }).join('');
+}
