@@ -4,5 +4,7 @@ Write simple .camelCase method (camel_case function in PHP, CamelCase in C# or c
 
 For instance:
 
+```JavaScript
 "hello case".camelCase() => HelloCase
 "camel case word".camelCase() => CamelCaseWord
+```
